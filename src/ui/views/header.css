@@ -1,0 +1,136 @@
+.home-header {
+  /* background-color: var(--light-color); */
+  /* background-color: var(--secondary-color); */
+  height: var(--header-height);
+  width: 100%;
+  color: var(--primary-color-light);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background-color: hsla(0, 0%, 0%, 20%);
+
+  /* align-content: center; */
+  &:has(.menu-hamburguesa--abierto) {
+    height: calc(var(--header-height) + var(--dropdown-header-height));
+  }
+
+  &:has(.menu-hamburguesa--abierto) > .dropdown-menu {
+    height: fit-content;
+    opacity: 1;
+    display: block;
+  }
+}
+
+.home-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nav-header {
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+a.home-header__link {
+  color: var(--light-color);
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 1rem;
+  text-decoration-color: transparent;
+
+  &:hover {
+    text-underline-offset: 0.5rem;
+    text-decoration-color: currentColor;
+    color: var(--secondary-color);
+    background-color: var(--secondary-color-transparent);
+  }
+}
+
+a.hoverable-link:hover {
+  color: var(--secondary-color);
+}
+
+ul.home-header-links {
+  display: flex;
+}
+
+.header-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.menu-hamburguesa {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+
+  > .bar {
+    background-color: currentColor;
+    width: 24px;
+    height: 2px;
+    border-radius: 2px;
+    transform-origin: 0px;
+    position: sticky;
+  }
+
+  &:hover > .bar {
+    /* background-color: var(--secondary-color); */
+    background-color: var(--light-color);
+  }
+}
+
+.menu-hamburguesa--abierto {
+  > .bar__1 {
+    rotate: 45deg;
+    translate: 3px -0.5px;
+  }
+
+  > .bar__2 {
+    opacity: 0;
+  }
+
+  > .bar__3 {
+    rotate: -45deg;
+    translate: 3px 0.5px;
+  }
+}
+
+.dropdown-menu {
+  height: 0px;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+  font-size: 18px;
+
+  > ul {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+    > li > a {
+      width: fit-content;
+      padding: 0.25rem 0;
+    }
+  }
+}
+
+@media (width < 720px) {
+  .menu-hamburguesa {
+    display: flex;
+  }
+
+  .nav-header {
+    display: none;
+  }
+
+  .header-icons {
+    margin-left: auto;
+  }
+}
