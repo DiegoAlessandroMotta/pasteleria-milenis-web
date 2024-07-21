@@ -15,7 +15,7 @@ export const ProductCard = ({ imgUrl, imgAlt, title, price, description, redirec
         <div className="product-card-content">
           <p className="product-card__title">{title}</p>
           <p className="product-card__description">{description}</p>
-          <p className="product-card__precio">S/. {price.toFixed(2)}</p>
+          <p className="product-card__precio">S/. {price}</p>
         </div>
       </article>
     </Link>

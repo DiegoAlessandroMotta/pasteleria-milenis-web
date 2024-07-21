@@ -28,7 +28,7 @@ export const PopularProductCard = ({
           }
         </div>
         <footer className="popular-product-card__footer">
-          <p className="product-card__precio">S/. {price.toFixed(2)}</p>
+          <p className="product-card__precio">S/. {price}</p>
           <button className="popular-product-card__button">Ver producto</button>
         </footer>
       </article>

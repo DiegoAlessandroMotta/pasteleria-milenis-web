@@ -1,25 +1,18 @@
-import { FloatingWhatsappIcon } from "@/components/FloatingWhatsappIcon"
+import { PageLayout } from "@/layouts/PageLayout"
 import { About } from "@/views/About"
 import { CustomCakes } from "@/views/CustomCakes"
-import { Footer } from "@/views/Footer"
-import { Header } from "@/views/Header"
 import { MainHero } from "@/views/MainHero"
 import { PopularProducts } from "@/views/PopularProducts"
 
 export const Home = () => {
   return (
-    <>
-      <Header />
-      <main className="flex-grow">
+    <PageLayout whatsappIconVisible={true}>
+      <main className="flex-grow bg-light">
         <MainHero />
         <PopularProducts />
         <CustomCakes />
         <About />
       </main>
-      <div className="layers">
-        <FloatingWhatsappIcon />
-      </div>
-      <Footer />
-    </>
+    </PageLayout>
   )
 }

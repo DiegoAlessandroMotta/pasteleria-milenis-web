@@ -39,7 +39,7 @@ export const PopularProducts = () => {
             <ul className="popular-products-container">
               {
                 cakes.map(cake => (
-                  <li className="contents" key={cake.imgUrl}>
+                  <li className="contents" key={cake.id}>
                     <PopularProductCard
                       imgUrl={cake.imgUrl}
                       imgAlt={cake.imgAlt}
@@ -49,7 +49,6 @@ export const PopularProducts = () => {
                       redirectTo={cake.redirectTo}
                     />
                   </li>
-
                 ))
               }
             </ul>

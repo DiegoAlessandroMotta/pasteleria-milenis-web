@@ -1,34 +1,126 @@
 [
   {
+    "id": 6,
     "imgUrl": "/img/pasteles/pastel-moca-con-crema.webp",
     "imgAlt": "imagen del producto",
+    "price": "72.00",
     "title": "Pastel de moca con crema",
     "description": "Bizcocho suave de café con crema dulce y un toque de chocolate",
-    "price": 72,
-    "redirectTo": "#"
+    "inOffer": false,
+    "redirectTo": "#",
+    "category": [
+      "cake"
+    ]
   },
   {
+    "id": 7,
     "imgUrl": "/img/pasteles/pastel-maracuya.webp",
     "imgAlt": "imagen del producto",
+    "price": "80.00",
     "title": "Pastel de maracuya",
     "description": "Esponjoso bizcocho con relleno y cobertura de crema de fruta",
-    "price": 80,
-    "redirectTo": "#"
+    "inOffer": false,
+    "redirectTo": "#",
+    "category": [
+      "cake",
+      "fruit"
+    ]
   },
   {
+    "id": 8,
     "imgUrl": "/img/pasteles/cheesecake-oreo.webp",
     "imgAlt": "imagen del producto",
+    "price": "86.00",
     "title": "Cheesecake oreo",
     "description": "Cremoso cheesecake con trozos crujientes de Oreo",
-    "price": 86,
-    "redirectTo": "#"
+    "inOffer": false,
+    "redirectTo": "#",
+    "category": [
+      "cake"
+    ]
   },
   {
+    "id": 9,
     "imgUrl": "/img/pasteles/cheesecake-fresa.webp",
     "imgAlt": "imagen del producto",
+    "price": "72.00",
     "title": "Cheesecake de fresa",
     "description": "Suave cheesecake con cobertura de salsa de fresa",
-    "price": 72,
-    "redirectTo": "#"
+    "inOffer": false,
+    "redirectTo": "#",
+    "category": [
+      "cake",
+      "fruit"
+    ]
+  },
+  {
+    "id": 1,
+    "imgUrl": "/img/pasteles/personalizados/custom-cake-1.webp",
+    "imgAlt": "imagen del producto",
+    "price": "120.00",
+    "title": "Pastel personalizado",
+    "description": "Pastel con la temática que desees",
+    "inOffer": false,
+    "redirectTo": "#",
+    "category": [
+      "cake",
+      "custom"
+    ]
+  },
+  {
+    "id": 2,
+    "imgUrl": "/img/pasteles/personalizados/custom-cake-2.webp",
+    "imgAlt": "imagen del producto",
+    "price": "85.00",
+    "title": "Pastel personalizado",
+    "description": "Pastel con la temática que desees",
+    "inOffer": true,
+    "redirectTo": "#",
+    "category": [
+      "cake",
+      "custom"
+    ]
+  },
+  {
+    "id": 3,
+    "imgUrl": "/img/pasteles/personalizados/custom-cake-3.webp",
+    "imgAlt": "imagen del producto",
+    "price": "125.00",
+    "title": "Pastel personalizado",
+    "description": "Pastel con la temática que desees",
+    "inOffer": true,
+    "redirectTo": "#",
+    "category": [
+      "cake",
+      "custom"
+    ]
+  },
+  {
+    "id": 4,
+    "imgUrl": "/img/pasteles/personalizados/custom-cake-4.webp",
+    "imgAlt": "imagen del producto",
+    "price": "110.00",
+    "title": "Pastel personalizado",
+    "description": "Pastel con la temática que desees",
+    "inOffer": false,
+    "redirectTo": "#",
+    "category": [
+      "cake",
+      "custom"
+    ]
+  },
+  {
+    "id": 5,
+    "imgUrl": "/img/pasteles/personalizados/custom-cake-5.webp",
+    "imgAlt": "imagen del producto",
+    "price": "90.00",
+    "title": "Pastel personalizado",
+    "description": "Pastel con la temática que desees",
+    "inOffer": false,
+    "redirectTo": "#",
+    "category": [
+      "cake",
+      "custom"
+    ]
   }
 ]

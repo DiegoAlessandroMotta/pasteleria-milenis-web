@@ -1,4 +1,5 @@
 import "@/ui/views/contact-section.css"
+import { ContactForm } from "./ContactForm"
 import { ContactInfo } from "./ContactInfo"
 
 export const ContactSection = () => {
@@ -8,7 +9,7 @@ export const ContactSection = () => {
         <div className="max-w-1280 mx-auto">
           <div className="contact-section-contenido">
             <ContactInfo />
-            {/* <ContactForm /> */}
+            <ContactForm />
           </div>
         </div>
       </div>

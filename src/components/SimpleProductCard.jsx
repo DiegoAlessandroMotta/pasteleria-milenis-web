@@ -14,7 +14,7 @@ export const SimpleProductCard = ({ imgUrl, imgAlt, price, inOffer, redirectTo }
         </picture>
         <div className="simple-product-card-content">
           {inOffer && <span className="product-card__offer">En oferta</span>}
-          <span className="simple-product-card__precio">S/. {price.toFixed(2)}</span>
+          <span className="simple-product-card__precio">S/. {price}</span>
         </div>
       </article>
     </Link>

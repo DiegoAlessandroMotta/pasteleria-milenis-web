@@ -7,12 +7,10 @@ import { Contact } from './pages/Contact'
 
 export const App = () => {
   return (
-    <div className='main-container'>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/products' element={<Products />} />
-        <Route path='/contact' element={<Contact />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/products' element={<Products />} />
+      <Route path='/contact' element={<Contact />} />
+    </Routes>
   )
 }
