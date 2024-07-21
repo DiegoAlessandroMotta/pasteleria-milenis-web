@@ -1,0 +1,34 @@
+[
+  {
+    "imgUrl": "/img/pasteles/pastel-moca-con-crema.webp",
+    "imgAlt": "imagen del producto",
+    "title": "Pastel de moca con crema",
+    "description": "Bizcocho suave de café con crema dulce y un toque de chocolate",
+    "price": 72,
+    "redirectTo": "#"
+  },
+  {
+    "imgUrl": "/img/pasteles/pastel-maracuya.webp",
+    "imgAlt": "imagen del producto",
+    "title": "Pastel de maracuya",
+    "description": "Esponjoso bizcocho con relleno y cobertura de crema de fruta",
+    "price": 80,
+    "redirectTo": "#"
+  },
+  {
+    "imgUrl": "/img/pasteles/cheesecake-oreo.webp",
+    "imgAlt": "imagen del producto",
+    "title": "Cheesecake oreo",
+    "description": "Cremoso cheesecake con trozos crujientes de Oreo",
+    "price": 86,
+    "redirectTo": "#"
+  },
+  {
+    "imgUrl": "/img/pasteles/cheesecake-fresa.webp",
+    "imgAlt": "imagen del producto",
+    "title": "Cheesecake de fresa",
+    "description": "Suave cheesecake con cobertura de salsa de fresa",
+    "price": 72,
+    "redirectTo": "#"
+  }
+]
