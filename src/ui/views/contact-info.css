@@ -1,0 +1,25 @@
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.contact-info-card {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-info-card__icon {
+  color: var(--primary-color-light);
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.contact-info-card__text {
+  text-align: center;
+  color: var(--light-color-text);
+}

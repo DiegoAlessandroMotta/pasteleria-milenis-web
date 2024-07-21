@@ -1,4 +1,5 @@
 import '@/ui/components/popular-product-card.css'
+import { Link } from 'react-router-dom'
 
 export const PopularProductCard = ({
   imgUrl,
@@ -9,28 +10,28 @@ export const PopularProductCard = ({
   redirectTo
 }) => {
   return (
-    <a href={redirectTo} class="w-full">
-      <article class="popular-product-card transition">
-        <picture class="square-image-container">
+    <Link to={redirectTo} className="w-full">
+      <article className="popular-product-card transition">
+        <picture className="square-image-container">
           <img
-            class="popular-product-card__image image-full-cover-center transition"
+            className="popular-product-card__image image-full-cover-center transition"
             src={imgUrl}
             alt={imgAlt}
           />
         </picture>
-        <div class="popular-product-card-content">
-          <h3 class="popular-product-card__title">{title}</h3>
+        <div className="popular-product-card-content">
+          <h3 className="popular-product-card__title">{title}</h3>
           {
             description && (
-              <p class="popular-product-card__description">{description}</p>
+              <p className="popular-product-card__description">{description}</p>
             )
           }
         </div>
-        <footer class="popular-product-card__footer">
-          <p class="product-card__precio">S/. {price.toFixed(2)}</p>
-          <button class="popular-product-card__button">Ver producto -&gt</button>
+        <footer className="popular-product-card__footer">
+          <p className="product-card__precio">S/. {price.toFixed(2)}</p>
+          <button className="popular-product-card__button">Ver producto</button>
         </footer>
       </article>
-    </a>
+    </Link>
   )
 }

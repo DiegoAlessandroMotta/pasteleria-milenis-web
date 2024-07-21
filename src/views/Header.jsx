@@ -1,4 +1,5 @@
 import '@/ui/views/header.css';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const links = [
@@ -29,9 +30,9 @@ export const Header = () => {
                       key={link.url}
                       className="contents"
                     >
-                      <a href={link.url} className="link home-header__link transition">
+                      <Link to={link.url} className="link home-header__link transition">
                         {link.name}
-                      </a>
+                      </Link>
                     </li>
                   ))
                 }
@@ -54,9 +55,9 @@ export const Header = () => {
                   key={link.url}
                   className="contents"
                 >
-                  <a href={link.url} className="link hoverable-link transition">
+                  <Link to={link.url} className="link hoverable-link transition">
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))
             }

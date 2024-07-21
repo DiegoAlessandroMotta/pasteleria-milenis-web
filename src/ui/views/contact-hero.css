@@ -1,0 +1,30 @@
+.contact-hero {
+  display: flex;
+  align-items: stretch;
+  background-color: var(--secondary-color-transparent);
+  padding: 6rem 0;
+}
+
+.contact-hero-content {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.contact-hero-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-hero__texto {
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  color: var(--light-color);
+}
+
+.contact-hero__titulo {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
