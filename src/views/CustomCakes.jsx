@@ -4,41 +4,73 @@ import { Link } from "react-router-dom";
 
 const cakes = [
   {
-    imgUrl: "/img/pasteles/personalizados/custom-cake-1.webp",
-    imgAlt: "imagen del producto",
-    price: 120,
-    redirectTo: "#",
+    "id": 1,
+    "imgUrl": "/img/pasteles/personalizados/custom-cake-1.webp",
+    "imgAlt": "imagen del producto",
+    "price": "120.00",
+    "title": "Pastel personalizado",
+    "description": "Pastel con la temática que desees",
+    "inOffer": false,
+    "category": [
+      "cake",
+      "custom"
+    ]
   },
   {
-    imgUrl: "/img/pasteles/personalizados/custom-cake-2.webp",
-    imgAlt: "imagen del producto",
-    price: 85,
-    inOffer: true,
-    redirectTo: "#",
+    "id": 2,
+    "imgUrl": "/img/pasteles/personalizados/custom-cake-2.webp",
+    "imgAlt": "imagen del producto",
+    "price": "85.00",
+    "title": "Pastel personalizado",
+    "description": "Pastel con la temática que desees",
+    "inOffer": true,
+    "category": [
+      "cake",
+      "custom"
+    ]
   },
   {
-    imgUrl: "/img/pasteles/personalizados/custom-cake-3.webp",
-    imgAlt: "imagen del producto",
-    price: 125,
-    inOffer: true,
-    redirectTo: "#",
+    "id": 3,
+    "imgUrl": "/img/pasteles/personalizados/custom-cake-3.webp",
+    "imgAlt": "imagen del producto",
+    "price": "125.00",
+    "title": "Pastel personalizado",
+    "description": "Pastel con la temática que desees",
+    "inOffer": true,
+    "category": [
+      "cake",
+      "custom"
+    ]
   },
   {
-    imgUrl: "/img/pasteles/personalizados/custom-cake-4.webp",
-    imgAlt: "imagen del producto",
-    price: 110,
-    redirectTo: "#",
+    "id": 4,
+    "imgUrl": "/img/pasteles/personalizados/custom-cake-4.webp",
+    "imgAlt": "imagen del producto",
+    "price": "110.00",
+    "title": "Pastel personalizado",
+    "description": "Pastel con la temática que desees",
+    "inOffer": false,
+    "category": [
+      "cake",
+      "custom"
+    ]
   },
   {
-    imgUrl: "/img/pasteles/personalizados/custom-cake-5.webp",
-    imgAlt: "imagen del producto",
-    price: 90,
-    redirectTo: "#",
-  },
+    "id": 5,
+    "imgUrl": "/img/pasteles/personalizados/custom-cake-5.webp",
+    "imgAlt": "imagen del producto",
+    "price": "90.00",
+    "title": "Pastel personalizado",
+    "description": "Pastel con la temática que desees",
+    "inOffer": false,
+    "category": [
+      "cake",
+      "custom"
+    ]
+  }
 ];
 
 export const CustomCakes = () => {
-
   return (
     <section className="custom-cakes px-8 py-8">
       <header className="max-w-1280 mx-auto py-4">
@@ -48,12 +80,12 @@ export const CustomCakes = () => {
         {
           cakes.map((cake) => (
             <SimpleProductCard
-              key={cake.imgUrl}
+              key={cake.id}
               imgUrl={cake.imgUrl}
               imgAlt={cake.imgAlt}
               price={cake.price}
               inOffer={cake.inOffer}
-              redirectTo={cake.redirectTo}
+              redirectTo={`/products/${cake.id}`}
             />
           ))
         }

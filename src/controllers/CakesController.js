@@ -16,8 +16,7 @@ export class CakeController {
     //   imgAlt: "",
     //   title: cake.title,
     //   description: cake.description,
-    //   price: cake.price,
-    //   redirectTo: "#"
+    //   price: cake.price
     // }))
 
     if (limit < 1 || limit > 100) {
@@ -25,5 +24,15 @@ export class CakeController {
     }
 
     return cakes.slice(0, limit);
+  }
+
+  static getCake = async ({ id }) => {
+    const cake = cakes.find(cake => cake.id == id)
+
+    if (cake === undefined) {
+      throw new Error("Producto no encontrado")
+    }
+
+    return cake;
   }
 }

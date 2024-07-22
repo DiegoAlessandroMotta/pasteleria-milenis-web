@@ -38,15 +38,15 @@ export const ProductsList = () => {
           }
           {
             !error && (
-              cakes.map((product) => (
+              cakes.map((cake) => (
                 <ProductCard
-                  key={product.imgUrl}
-                  imgUrl={product.imgUrl}
-                  imgAlt={product.imgAlt}
-                  title={product.title}
-                  description={product.description}
-                  price={product.price}
-                  redirectTo={product.redirectTo}
+                  key={cake.id}
+                  imgUrl={cake.imgUrl}
+                  imgAlt={cake.imgAlt}
+                  title={cake.title}
+                  description={cake.description}
+                  price={cake.price}
+                  redirectTo={`/products/${cake.id}`}
                 />
               ))
             )

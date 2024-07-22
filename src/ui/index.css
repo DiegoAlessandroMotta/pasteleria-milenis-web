@@ -11,7 +11,7 @@
   --light-color: #fdfaf6;
   --light-color-text: hsla(0, 0%, 0%, 50%);
   --header-height: 4rem;
-  --dropdown-header-height: 5rem;
+  --dropdown-header-height: 6rem;
 }
 
 * {

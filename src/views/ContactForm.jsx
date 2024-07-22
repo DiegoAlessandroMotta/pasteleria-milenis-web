@@ -3,8 +3,8 @@ import "@/ui/views/contact-form.css"
 export const ContactForm = () => {
   return (
     <div>
-      <p class="contact-section__title">Envíanos un mensaje</p>
-      <form class="contact-form">
+      <p className="contact-section__title">Envíanos un mensaje</p>
+      <form className="contact-form" onSubmit={(e) => { e.preventDefault() }}>
         <label>
           Nombres y apellidos
           <input type="text" />
@@ -21,7 +21,7 @@ export const ContactForm = () => {
           Mensaje
           <input type="text" />
         </label>
-        <button type="submit" class="button">Enviar</button>
+        <button type="submit" className="button">Enviar</button>
       </form>
     </div>
   )

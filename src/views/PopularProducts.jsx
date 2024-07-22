@@ -46,7 +46,7 @@ export const PopularProducts = () => {
                       title={cake.title}
                       description={cake.description}
                       price={cake.price}
-                      redirectTo={cake.redirectTo}
+                      redirectTo={`/products/${cake.id}`}
                     />
                   </li>
                 ))

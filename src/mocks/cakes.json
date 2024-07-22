@@ -7,7 +7,6 @@
     "title": "Pastel de moca con crema",
     "description": "Bizcocho suave de café con crema dulce y un toque de chocolate",
     "inOffer": false,
-    "redirectTo": "#",
     "category": [
       "cake"
     ]
@@ -20,7 +19,6 @@
     "title": "Pastel de maracuya",
     "description": "Esponjoso bizcocho con relleno y cobertura de crema de fruta",
     "inOffer": false,
-    "redirectTo": "#",
     "category": [
       "cake",
       "fruit"
@@ -34,7 +32,6 @@
     "title": "Cheesecake oreo",
     "description": "Cremoso cheesecake con trozos crujientes de Oreo",
     "inOffer": false,
-    "redirectTo": "#",
     "category": [
       "cake"
     ]
@@ -47,7 +44,6 @@
     "title": "Cheesecake de fresa",
     "description": "Suave cheesecake con cobertura de salsa de fresa",
     "inOffer": false,
-    "redirectTo": "#",
     "category": [
       "cake",
       "fruit"
@@ -61,7 +57,6 @@
     "title": "Pastel personalizado",
     "description": "Pastel con la temática que desees",
     "inOffer": false,
-    "redirectTo": "#",
     "category": [
       "cake",
       "custom"
@@ -75,7 +70,6 @@
     "title": "Pastel personalizado",
     "description": "Pastel con la temática que desees",
     "inOffer": true,
-    "redirectTo": "#",
     "category": [
       "cake",
       "custom"
@@ -89,7 +83,6 @@
     "title": "Pastel personalizado",
     "description": "Pastel con la temática que desees",
     "inOffer": true,
-    "redirectTo": "#",
     "category": [
       "cake",
       "custom"
@@ -103,7 +96,6 @@
     "title": "Pastel personalizado",
     "description": "Pastel con la temática que desees",
     "inOffer": false,
-    "redirectTo": "#",
     "category": [
       "cake",
       "custom"
@@ -117,7 +109,6 @@
     "title": "Pastel personalizado",
     "description": "Pastel con la temática que desees",
     "inOffer": false,
-    "redirectTo": "#",
     "category": [
       "cake",
       "custom"

@@ -1,16 +1,11 @@
 .home-header {
-  /* background-color: var(--light-color); */
-  /* background-color: var(--secondary-color); */
+  background-color: var(--primary-color);
   height: var(--header-height);
   width: 100%;
   color: var(--primary-color-light);
-  position: fixed;
   z-index: 10;
   top: 0;
-  backdrop-filter: blur(10px);
-  background-color: hsla(0, 0%, 0%, 20%);
 
-  /* align-content: center; */
   &:has(.menu-hamburguesa--abierto) {
     height: calc(var(--header-height) + var(--dropdown-header-height));
   }
@@ -47,13 +42,12 @@ a.home-header__link {
   &:hover {
     text-underline-offset: 0.5rem;
     text-decoration-color: currentColor;
-    color: var(--secondary-color);
-    background-color: var(--secondary-color-transparent);
   }
 }
 
 a.hoverable-link:hover {
-  color: var(--secondary-color);
+  color: white;
+  scale: 1.05;
 }
 
 ul.home-header-links {
@@ -81,7 +75,6 @@ ul.home-header-links {
   }
 
   &:hover > .bar {
-    /* background-color: var(--secondary-color); */
     background-color: var(--light-color);
   }
 }
@@ -104,7 +97,6 @@ ul.home-header-links {
 
 .dropdown-menu {
   height: 0px;
-  overflow: hidden;
   display: none;
   opacity: 0;
   font-size: 18px;
