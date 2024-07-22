@@ -3,7 +3,7 @@ import { CakeController } from "@/controllers/CakesController"
 import "@/ui/views/popular-products.css"
 import { useEffect, useState } from "react"
 
-export const PopularProducts = () => {
+export const PopularProducts = ({ title }) => {
   const [cakes, setCakes] = useState([])
   const [error, setError] = useState(false)
 
@@ -26,7 +26,8 @@ export const PopularProducts = () => {
   return (
     <section className="popular-products px-8 py-8">
       <header className="max-w-1280 mx-auto py-4">
-        <h2 className="titulo-seccion">Productos más pedidos</h2>
+        {/* <h2 className="titulo-seccion">Productos más pedidos</h2> */}
+        <h2 className="titulo-seccion">{title}</h2>
       </header>
       <div className="max-w-1280 mx-auto">
         {

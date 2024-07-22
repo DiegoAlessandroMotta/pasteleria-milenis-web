@@ -9,7 +9,7 @@ export const Home = () => {
     <PageLayout whatsappIconVisible={true}>
       <main className="flex-grow bg-light">
         <MainHero />
-        <PopularProducts />
+        <PopularProducts title={"Productos más pedidos"} />
         <CustomCakes />
         <About />
       </main>

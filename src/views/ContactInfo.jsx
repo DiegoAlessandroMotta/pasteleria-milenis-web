@@ -7,14 +7,20 @@ import "@/ui/views/contact-info.css"
 export const ContactInfo = () => {
   return (
     <div className="contact-info">
-      <div className="contact-info-card">
-        <MapPinIcon className="contact-info-card__icon" width="48" height="48" />
-        <div className="contact-info-card__text">
-          <p>Jr. La Cultura N° 851</p>
-          <p>Puerto Maldonado - Peru</p>
-          <p>Solo recojo, previa coordinación</p>
+      <a
+        href="https://www.bing.com/maps?osid=81a93dd7-2373-4788-9353-5dfb45e23b19&cp=-12.587985~-69.194907&lvl=17.013456&pi=0&imgid=0f327d70-bfda-4b9c-b83a-239f093efe59&v=2&sV=2&form=S00027"
+        className="link"
+        target="_blank"
+      >
+        <div className="contact-info-card">
+          <MapPinIcon className="contact-info-card__icon" width="48" height="48" />
+          <div className="contact-info-card__text">
+            <p>Jr. La Cultura N° 851</p>
+            <p>Puerto Maldonado - Peru</p>
+            <p>Solo recojo, previa coordinación</p>
+          </div>
         </div>
-      </div>
+      </a>
       <div className="contact-info-card">
         <ClockIcon className="contact-info-card__icon" width="48" height="48" />
         <div className="contact-info-card__text">

@@ -7,19 +7,19 @@ export const ContactForm = () => {
       <form className="contact-form" onSubmit={(e) => { e.preventDefault() }}>
         <label>
           Nombres y apellidos
-          <input type="text" />
+          <input type="text" name="nombres_apellidos" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" title="El nombre debe contener solo letras y espacios, y debe tener al menos 2 caracteres." required />
         </label>
         <label>
           Celular
-          <input type="text" />
+          <input name="celular" pattern="[0-9]{9}" maxLength="9" required />
         </label>
         <label>
           Correo electrónico
-          <input type="text" />
+          <input type="email" required />
         </label>
         <label>
           Mensaje
-          <input type="text" />
+          <input type="text" required />
         </label>
         <button type="submit" className="button">Enviar</button>
       </form>

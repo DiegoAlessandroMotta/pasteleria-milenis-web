@@ -21,7 +21,7 @@ export const Header = () => {
     document.addEventListener("click", handleClickDocument);
 
     return () => {
-      removeEventListener(document, handleClickDocument)
+      document.removeEventListener("click", handleClickDocument);
     }
   }, [])
 
